@@ -12,8 +12,7 @@ module.exports = {
 
   show: function(params, callback) {
     var spec = {
-      model: {model: 'User', params: params},
-      repos: {collection: 'Repos', params: {user: params.login}}
+      model: {model: 'User', params: params}
     };
     this.app.fetch(spec, function(err, result) {
       callback(err, result);

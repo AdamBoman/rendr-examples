@@ -17,14 +17,7 @@ module.exports = BaseApp.extend({
    * app on both client and server.
    */
   initialize: function() {
-    /**
-     * Register our Handlebars helpers.
-     *
-     * `this.templateAdapter` is, by default, the `rendr-handlebars` module.
-     * It has a `registerHelpers` method, which allows us to register helper
-     * modules that can be used on both client & server.
-     */
-    this.templateAdapter.registerHelpers(handlebarsHelpers);
+
   },
 
   /**
